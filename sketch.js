@@ -61,6 +61,7 @@ function draw() {
   if (keyCode === 32) {
     arrow.shoot(playerArcher.body.angle);
   }
+}
 
 function keyPressed {
   if(keyCode === 32) {
@@ -72,7 +73,6 @@ function keyPressed {
     Matter.body.setAngle(arrow.body, angle);
     playerArrows.push(arrow);
   }
-}
 
 function keyReleased{
   if(keyCode === 32) {
